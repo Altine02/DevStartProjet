@@ -1,0 +1,428 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif; /* A clear, readable font */
+    line-height: 1.6; /* Improves readability of paragraphs */
+    color: #333; /* Dark gray for main text for better contrast */
+    background-color: #f8f8f8; /* A light, soft background */
+}
+
+/* Container for main content */
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Main Page Titles (H1) */
+h1 {
+    color: #8B4513; /* A warm, inviting brown */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 2.8rem; /* Larger for main page titles */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+}
+
+/* Section Headings (H2) */
+h2 {
+    color: #556B2F; /* A natural, earthy green */
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #EEE; /* A light separator line */
+    padding-bottom: 8px;
+    font-size: 2rem;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* Strong/Bold text within paragraphs */
+p strong {
+    color: #8B4513; /* Highlight important names/words */
+}
+
+/* Lead paragraphs (like in Gallery/Contact) */
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #555;
+}
+
+/* Navbar Branding */
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #CD5C5C !important; /* Coral-like color for the brand */
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: #555 !important; /* Darker link color */
+    font-weight: 500;
+    margin-right: 15px;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #8B4513 !important; /* Change color on hover */
+}
+
+.navbar-nav .nav-link.active {
+    color: #CD5C5C !important; /* Active link color */
+    border-bottom: 2px solid #CD5C5C; /* Underline active link */
+    padding-bottom: 3px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40; /* Bootstrap dark background */
+    color: #e0e0e0; /* Lighter text for footer */
+    padding: 30px 0;
+    margin-top: 60px; /* Space above the footer */
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ADD8E6; /* Light blue for footer links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff; /* Brighter white on hover */
+    text-decoration: none; /* Keep without underline on hover */
+}
+
+footer .fab {
+    font-size: 1.2rem; /* Size of social media icons */
+    margin: 0 5px;
+}
+
+/* Index page slogan */
+section.text-center h1 {
+    font-size: 2.2rem; /* Slightly smaller than main H1 */
+    color: #CD5C5C;
+    margin-top: 50px;
+}
+
+section.text-center p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Index page slogan */
+section.text-center h1 {
+    font-size: 2.2rem; /* Slightly smaller than main H1 */
+    color: #CD5C5C;
+    margin-top: 50px;
+}
+
+section.text-center p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Cover Image on Index Page */
+.container img { /* Target the specific image in the main container */
+    display: block; /* Ensures margin: auto works */
+    margin: 30px auto 50px auto; /* Centers horizontally, adds space */
+    border-radius: 12px; /* Nicely rounded corners */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15); /* More prominent shadow */
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures image covers its area well */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.container img:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+/* List in About Page */
+.container ul {
+    list-style: disc; /* Use discs for list items */
+    padding-left: 25px;
+    margin-bottom: 30px;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.container ul li strong {
+    color: #556B2F; /* Highlight the values */
+}
+/* Card styling for gallery images and testimonials */
+.card {
+    border: none; /* Remove default Bootstrap card border */
+    border-radius: 10px; /* Rounded corners for cards */
+    overflow: hidden; /* Ensures content stays within rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* More pronounced shadow on hover */
+}
+
+.card-img-top {
+    height: 200px; /* Fixed height for gallery images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    color: #8B4513; /* Title color for dish names */
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Testimonial specific styles */
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+    border-left: 4px solid #CD5C5C; /* A decorative left border */
+    padding-left: 15px;
+    margin-left: 0;
+}
+
+.blockquote-footer {
+    font-style: normal;
+    color: #777;
+    text-align: right; /* Align footer to the right */
+    padding-right: 15px;
+}
+/* Contact info section */
+.col-md-6 h2, .col-md-6 h3 {
+    color: #556B2F; /* Green for contact headings */
+    margin-bottom: 20px;
+}
+
+.col-md-6 p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.col-md-6 p i {
+    color: #CD5C5C; /* Icon color */
+    margin-right: 10px;
+    width: 20px; /* Ensure consistent spacing */
+    text-align: center;
+}
+
+/* Hours list */
+.col-md-6 ul {
+    list-style: none; /* Remove default list bullets */
+    padding-left: 0;
+}
+
+.col-md-6 ul li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Google Maps iframe container */
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 8px; /* Rounded corners for map */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Form styling */
+form .form-label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+form .form-control:focus {
+    border-color: #CD5C5C; /* Highlight on focus */
+    box-shadow: 0 0 0 0.25rem rgba(205, 92, 92, 0.25);
+}
+
+.btn-primary {
+    background-color: #CD5C5C; /* Match brand color */
+    border-color: #CD5C5C;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #B22222; /* Darker red on hover */
+    border-color: #B22222;
+}
+/* Card styling for gallery images and testimonials */
+.card {
+    border: none; /* Remove default Bootstrap card border */
+    border-radius: 10px; /* Rounded corners for cards */
+    overflow: hidden; /* Ensures content stays within rounded corners */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* More pronounced shadow on hover */
+}
+
+.card-img-top {
+    height: 200px; /* Fixed height for gallery images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    color: #8B4513; /* Title color for dish names */
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Testimonial specific styles */
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+    border-left: 4px solid #CD5C5C; /* A decorative left border */
+    padding-left: 15px;
+    margin-left: 0;
+}
+
+.blockquote-footer {
+    font-style: normal;
+    color: #777;
+    text-align: right; /* Align footer to the right */
+    padding-right: 15px;
+}
+/* Contact info section */
+.col-md-6 h2, .col-md-6 h3 {
+    color: #556B2F; /* Green for contact headings */
+    margin-bottom: 20px;
+}
+
+.col-md-6 p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.col-md-6 p i {
+    color: #CD5C5C; /* Icon color */
+    margin-right: 10px;
+    width: 20px; /* Ensure consistent spacing */
+    text-align: center;
+}
+
+/* Hours list */
+.col-md-6 ul {
+    list-style: none; /* Remove default list bullets */
+    padding-left: 0;
+}
+
+.col-md-6 ul li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Google Maps iframe container */
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    border-radius: 8px; /* Rounded corners for map */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.embed-responsive iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Form styling */
+form .form-label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+form .form-control:focus {
+    border-color: #CD5C5C; /* Highlight on focus */
+    box-shadow: 0 0 0 0.25rem rgba(205, 92, 92, 0.25);
+}
+
+.btn-primary {
+    background-color: #CD5C5C; /* Match brand color */
+    border-color: #CD5C5C;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #B22222; /* Darker red on hover */
+    border-color: #B22222;
+}
